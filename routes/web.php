@@ -16,7 +16,7 @@ Route::get( '/', function () {
 } );
 
 //Admin Route start
-Route::group( [ 'middleware' => 'auth','IsAdmin' ], function () {
+//Route::group( [ 'middleware' => 'auth','IsAdmin' ], function () {
 
 
 	Route::get( '/admin', function () {
@@ -27,7 +27,7 @@ Route::group( [ 'middleware' => 'auth','IsAdmin' ], function () {
 
 
 
-} );
+//} );
 //Admin Route end
 
 Auth::routes();
